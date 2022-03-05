@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/x-icon" href="../static/coverPics/logo.png">
+    <script src="https://kit.fontawesome.com/c51bbf4f1c.js" crossorigin="anonymous"></script>
+    <title>Spectra - Your favourite music library</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="brand"><a href="/"><img src="../static/coverPics/logo.png" alt="Spectra"></a>Spectra</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <div id="search">
+                <input type="text" class="searchBox" id="searchArtist" placeholder="Search by Artist"
+                    name="searchArtist">
+                <input type="text" class="searchBox" id="searchSong" placeholder="Search by Song" name="searchSong">
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="songList">
+            <div class="Album">
+                <h1>Best of Alan Walker Songs</h1>
+                <div class="songItemContainer">
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover1.jpeg" alt="1">
+                        <span>DarkSide</span>
+                        <span class="songListPlay">4:00 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 2.jpeg" alt="2">
+                        <span>Faded</span>
+                        <span class="songListPlay">3:33 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 3.jpeg" alt="3">
+                        <span>Lily</span>
+                        <span class="songListPlay">3:16 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 4.jpeg" alt="4">
+                        <span>Spectre</span>
+                        <span class="songListPlay">3:26 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 5.jpeg" alt="5">
+                        <span>On my way</span>
+                        <span class="songListPlay">3:37 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 6.jpeg" alt="6">
+                        <span>Alone</span>
+                        <span class="songListPlay">2:41 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Album">
+                <h1>Best of Ava Max Songs</h1>
+                <div class="songItemContainer">
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 7.jpeg" alt="7">
+                        <span>Kings & Queens</span>
+                        <span class="songListPlay">2:43 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem" id="Christmas">
+                        <img src="../static/coverPics/cover 8.jpeg" alt="8">
+                        <span>Christmas without you</span>
+                        <span class="songListPlay">2:50 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 9.jpeg" alt="9">
+                        <span>Sweet but psycho</span>
+                        <span class="songListPlay">3:08 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 10.jpeg" alt="10">
+                        <span>Into your arms</span>
+                        <span class="songListPlay">2:21 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="../static/coverPics/cover 11.jpeg" alt="11">
+                        <span>Alone Pt. II</span>
+                        <span class="songListPlay">4:06 <i class="far songPlay fa-play-circle"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="songBanner">
+            <img src="coverPics/cover1.jpeg" alt="cover1">
+        </div> -->
+
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+        <span id="timeStamp"></span>
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songPlaying" id="gif">
+            <img src="../static/coverPics/playing.gif" width="80px" alt="Playing">
+            <p>DarkSide - Alan Walker, Tomine Harket</p>
+        </div>
+    </div>
+
+    <script src="../static/index.js"></script>
+</body>
+
+</html>
